@@ -15,9 +15,6 @@ class Student:
         self.average_value = []
         students_list.append(self)
 
-    def add_courses(self, course):
-        self.finished_courses.append(course)
-
     def rate_lecture(self, lecturer, course, grade):
         if isinstance(lecturer,
                       Lecturer) and course in lecturer.courses_attached and course in self.courses_in_progress:
